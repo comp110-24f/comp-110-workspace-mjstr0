@@ -1,12 +1,17 @@
 """"Practice with conditionals"""
 
 
-def check_first_letter(word: str, letter: str) -> str:
-    "return “match!” if the first character of word is letter"
+def less_than_10(num: int) -> None:
+    """tell me if num is <10"""
+    dub: int = num * 2
+    dub = dub - 1
 
-    if word[0] == letter:
-        return "match!"
+    print(dub)
+    if num < 10:
+        print("Small number!")
     else:
-        return "no match"
+        print("Big number!")
+    print("Have a nice day!")
 
-    print(check_first_letter("happy", "h"))
+
+less_than_10(num=5)
